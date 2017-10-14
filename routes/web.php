@@ -11,8 +11,26 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+/*
+	-------------------------------------------------
+	
+	Amzeui route
 
-Route::any('/','Index\IndexController@index');
+	-------------------------------------------------
+*/ 
+
+Route::any('index','Index\IndexController@index');
+
+Route::any('login','Index\IndexController@login');
+
+Route::any('chart','Index\IndexController@chart');
+
+Route::any('formAmazeui','Index\IndexController@formAmazeui');
+
+Route::any('formLine','Index\IndexController@formLine');
+
+Route::any('formNewsList','Index\IndexController@formNews');
+
+Route::any('tableFontList','Index\IndexController@tableFontList');
+
+Route::any('tableImagesList','Index\IndexController@tableImagesList');
