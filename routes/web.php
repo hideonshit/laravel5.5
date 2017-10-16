@@ -41,3 +41,7 @@ Route::group(['prefix'=>'admin'],function(){
 
 });
 
+Route::any('/',function(){
+	return view('welcome');
+});
+
