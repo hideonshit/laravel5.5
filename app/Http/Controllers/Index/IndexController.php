@@ -14,32 +14,32 @@
 			return view('Index.chart');
 		}
 
-		public function formAmazeui(){
-			return view('Index.form-amazeui');
+		public function calendar(){
+			return view('Index.calendar');
 		}
 
-		public function formLine(){
-			return view('Index.form-line');
-		}
-
-		public function formNewsList(){
-			return view('Index.form-news-list');
-		}
-
-		public function formNews(){
-			return view('Index.form-news');
+		public function form(){
+			return view('Index.form');
 		}
 
 		public function login(){
 			return view('Index.login');
 		}
 
-		public function tableFontList(){
-			return view('Index.table-font-list');
+		public function signUp(){
+			return view('Index.sign-up');
 		}
 
-		public function tableImagesList(){
-			return view('Index.table-images-list');
+		public function tableListImg(){
+			return view('Index.table-list-img');
+		}
+
+		public function tableList(){
+			return view('Index.table-list');
+		}
+
+		public function table(){
+			return view('Index.tables');
 		}
 
 	}

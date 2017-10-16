@@ -19,18 +19,25 @@
 	-------------------------------------------------
 */ 
 
-Route::any('index','Index\IndexController@index');
+Route::group(['prefix'=>'admin'],function(){
 
-Route::any('login','Index\IndexController@login');
+	Route::any('index','Index\IndexController@index');
 
-Route::any('chart','Index\IndexController@chart');
+	Route::any('login','Index\IndexController@login');
 
-Route::any('formAmazeui','Index\IndexController@formAmazeui');
+	Route::any('chart','Index\IndexController@chart');
 
-Route::any('formLine','Index\IndexController@formLine');
+	Route::any('form','Index\IndexController@form');
 
-Route::any('formNewsList','Index\IndexController@formNews');
+	Route::any('calendar','Index\IndexController@calendar');
 
-Route::any('tableFontList','Index\IndexController@tableFontList');
+	Route::any('table','Index\IndexController@table');
 
-Route::any('tableImagesList','Index\IndexController@tableImagesList');
+	Route::any('table-list-img','Index\IndexController@tableListImg');
+
+	Route::any('table-list','Index\IndexController@tableList');
+
+	Route::any('sign-up','Index\IndexController@signUp');
+
+});
+
